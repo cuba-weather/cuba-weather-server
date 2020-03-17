@@ -1,6 +1,26 @@
 Cuba Weather Website + API
 ==========================
 
+INSTALLATION
+------------
+
+- `git clone https://github.com/cuba-weather/cuba-weather-server.git`
+- `composer install`
+- `php init` (setup Development scenario)
+- configure db in `common/config/main-local.php`
+- `php yii migrate`
+
+ENTRY POINTS
+------------
+
+There are several entry points in this project:
+
+- frontend/web
+- backend/web
+- api/web
+
+Point your webserver to them or check the `serve` command with `php yii help serve` to use the PHP built-in web server which is enought for development purposes.
+
 DIRECTORY STRUCTURE
 -------------------
 
