@@ -1,0 +1,23 @@
+on:
+    schedule:
+      - cron: '0 */12 * * *'
+
+    push:
+      branches:
+        - master
+
+  jobs:
+    UpdateSubmodule:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v2
+
+        - name: Update Submodule
+          run: |
+            git config --global user.name 'leynier'
+            git config --global user.email 'leynier41@gmail.com'
+            cd frontend/ghpages/
+            git pull
+            cd ../..
+            git commit --allow-empty -am "Update Submodule"
+            git push
