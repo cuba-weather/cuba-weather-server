@@ -23,3 +23,19 @@ jobs:
           git add .
           git commit --allow-empty -am "Update Submodule"
           git push
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
+          git pull
