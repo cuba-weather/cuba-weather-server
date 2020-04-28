@@ -17,8 +17,8 @@ jobs:
           git config --global user.name 'leynier'
           git config --global user.email 'leynier41@gmail.com'
           git pull
-          cd frontend/ghpage &&\
-          git pull &&\
+          cd frontend/ghpage
+          git pull
           cd ../..
           git add .
           git commit --allow-empty -am "Update Submodule"
