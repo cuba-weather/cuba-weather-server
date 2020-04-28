@@ -17,6 +17,7 @@ jobs:
           git config --global user.name 'leynier'
           git config --global user.email 'leynier41@gmail.com'
           git pull --recurse-submodules
+          git submodule update --recursive --remote
           git add .
           git commit --allow-empty -am "Update Submodule"
           git push
